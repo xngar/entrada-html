@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      box-sizing: border-box;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+        Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+        sans-serif;
+    }
+    .contenedor {
+      width: 800px;
+      background-color: aquamarine;
+    }
+
+    .titulo {
+      background-color: black;
+      height: 100px;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      font-size: 40px;
+    }
+
+    .banner {
+      height: 300px;
+      background-color: #702bde;
+      display: flex;
+
+      align-items: center;
+      justify-content: space-evenly;
+      gap: 20px;
+    }
+
+    .banner-info {
+      font-size: 20px;
+      font-weight: bold;
+      color: white;
+    }
+
+    .banner-info p:nth-child(2) {
+      margin-bottom: 60px;
+    }
+
+    .franja {
+      height: 40px;
+      background: rgb(113, 43, 219);
+      background: linear-gradient(
+        90deg,
+        rgba(113, 43, 219, 1) 0%,
+        rgba(245, 65, 62, 1) 100%
+      );
+    }
+
+    .mensaje {
+      height: 150px;
+      background-color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #702bde;
+      flex-direction: column;
+    }
+    .mensaje h2 {
+      font-size: 55px;
+    }
+    .mensaje h3 {
+      font-size: 28px;
+    }
+
+    .franja-2 {
+      height: 40px;
+      background: rgb(113, 43, 219);
+    }
+
+    .info-ticket {
+      height: 100px;
+      background-color: lightgrey;
+      font-size: 25px;
+      color: #702bde;
+      padding-left: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      padding-top: 5px;
+      
+    }
+
+    .info-user {
+      height: 100px;
+      background-color: white;
+      display: flex;
+      gap: 20px;
+      justify-content: space-evenly;
+      align-items: center;
+      
+    }
+
+    .info-user > div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .info-user > div span:nth-child(1) {
+      font-weight: bold;
+      font-size: 23px;
+      color: #702bde;
+    }
+
+    .info-user > div span:nth-child(2) {
+      color: gray;
+    }
+
+    .evento-info {
+      height: 220px;
+      background-color: white;
+      padding-top: 20px;
+      padding-left: 20px;
+      font-size: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+    }
+
+    .evento-info > div span:nth-child(1) {
+      font-weight: bold;
+      color: #702bde;
+      margin-right: 10px;
+    }
+
+    .evento-info > div span:nth-child(2) {
+      color: gray;
+    }
+
+    .evento-info-detalle {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .evento-info-detalle > div span:nth-child(1){
+        color: #702bde;
+    }
+    
+    .importante{
+        background-color: white;
+        padding-top: 30px;
+        padding-left: 20px;
+        
+    }
+
+    .importante h2{
+        text-decoration:underline;
+        text-decoration-color: orange;
+        text-underline-offset: 6px;
+        margin-bottom: 10px;
+        
+    }
+
+    .importante p:nth-child(2){
+        color: #702bde;
+        text-align: justify;
+        font-weight: bold;
+        padding-bottom: 20px;
+        font-size: 13px;
+    }
+
+    .importante p:nth-child(3){
+        color:gray;
+        text-align: justify;
+        font-size: 13px;
+        padding-bottom: 40px;
+    }
+    .separador{
+        height: 160px;
+        width: 5px;
+        background-color: orange;
+    }
+  </style>
+  <body>
+    <div class="contenedor">
+      <div class="titulo"><p>TOA FITNESS EXPERIENCE 2022</p></div>
+      <div class="banner">
+        <div class="banner-logo">
+          <img src="logo.png" width="220" />
+        </div>
+        <div class="separador"></div>
+        <div class="banner-info">
+          <p>Sabado 12 de Noviembre</p>
+          <p>2022 /09:00 hrs.</p>
+          <p>Stadio Italiano</p>
+        </div>
+        <div class="banner-qr">
+          <img src="qr.png" width="200" />
+        </div>
+      </div>
+      <div class="franja"></div>
+      <div class="mensaje">
+        <h2>¡YA TIENES TU TICKET!</h2>
+
+        <h3>DISFRUTA DE LAS MEJORES CLASES FITNESS</h3>
+      </div>
+      <div class="franja-2"></div>
+      <div class="info-ticket">
+        <div><p>ENTRADA GENERAL</p></div>
+        <div><b>Categoría:</b><span> GENERAL</span></div>
+      </div>
+      <div class="info-user">
+        <div>
+          <span>N° de Orden</span>
+          <span>4779150X2</span>
+        </div>
+
+        <div>
+          <span>Nombre</span>
+          <span>Anita Pacheco</span>
+        </div>
+
+        <div>
+          <span>RUT</span>
+          <span>6.747.440-6</span>
+        </div>
+      </div>
+      <hr />
+      <div class="evento-info">
+        <div>
+          <span>EVENTO:</span>
+          <span>Toa Fitness Experience 2022</span>
+        </div>
+        <div>
+          <span>PRODUCE:</span>
+          <span>Toa Academy Spa.</span>
+        </div>
+        <div class="evento-info-detalle">
+          <div>
+            <span>RUT:</span>
+            <span>76.694.676-2</span>
+          </div>
+          <div>
+            <span>PRECIO:</span>
+            <span>$10.000</span>
+          </div>
+        </div>
+      </div>
+      <hr>
+      <div class="importante">
+        <h2>IMPORTANTE</h2>
+        <p>
+          En base a la normativa sanitaria vigente, los tickets podrían ser
+          nominativos al momento de la realización del evento. Dado la anterior,
+          recomendamos revisar los términos de cada evento. Al momento de
+          ingresar al evento, deberás mostrar tu cédula de identidad y código QR
+          en el acceso del evento. Para esto, puedes imprimirlo o mostrarlo
+          directamente de tu teléfono. De lo contrario, no podrás ingresar al
+          recinto. El acceso oficial al evento es por Avenida Apoquindo #6589,
+          Las Condes, Región Metropolitana.
+        </p>
+        <p>
+          La realización del evento está sujeta a la cancelación de éste, previo
+          aviso del organizador. El portador de este ticket acepta ser revisado
+          al momento de ingresar al recinto. Prohibido el acceso con bebidas
+          alcohólicas, drogas, armas, grabadoras, cámaras de cualquier tipo o
+          cualquier otro artículo no autorizado. Se podrá impedir el ingreso del
+          portador de este ticket al recinto del evento o, en su caso, podrá ser
+          desalojado de éste (sin derecho a reembolso de ningún tipo), en los
+          siguientes casos: Si portara cualquiera de los objetos antes
+          indicados, si presenta una conducta ofensiva, si ingresa en estado de
+          ebriedad o induce al desorden. De igual forma, la productora se
+          reserva el derecho de admisión. El portador de este ticket se obliga a
+          cumplir con las normas y exigencias del recinto del evento. Toa
+          Academy y Stadio Italiano no se hacen responsables por los ticket no
+          adquiridos a través del sistema de venta de entradas en
+          www.toaacademy.com
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
